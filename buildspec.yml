@@ -10,7 +10,7 @@ env:
     commands:
       - echo Installing ...
 #      - npm install -g mocha
-      - pip install --user awscli
+      - npm install --user awscli
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
