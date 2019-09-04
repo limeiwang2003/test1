@@ -5,7 +5,7 @@ phases:
         nodejs: 10  
     commands:
       - echo Installing ...
-      - npm install --user awscli
+      - npm install -g awscli
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
