@@ -15,25 +15,13 @@ env:
     commands:
       - echo Installing source NPM dependencies...
       - npm install
-      - npm install unit.js
+#      - npm install unit.js
   build:
     commands:
       - echo Build started on `date`
-      - echo Compiling the Node.js code
-      - mocha test.js
+#      - echo Compiling the Node.js code
+#      - mocha test.js
   post_build:
     commands:
-      - aws s3 sync dist s3://${S3_BUCKET} --delete"
+#      - aws s3 sync dist s3://${S3_BUCKET} --delete"
       - echo Build completed on `date`
-artifacts:
-    files:
-        - '**/*'
-    base-directory: 'dist*'
-    discard-paths: yes
-# Include only the files required for your application to run.
-# Do not use recursively include artifacts from node_modules directory as it will include unnecessary packages 
-# used only for building and testing.
-# ExpressJS apps will need other artifact directories included (bin/*, public/*, routes/*, views/* etc).
-#artifacts:
-#  files:
-#    - target/test-wlm.zip
