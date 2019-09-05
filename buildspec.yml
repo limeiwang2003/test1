@@ -5,7 +5,7 @@ phases:
         nodejs: 10  
     commands:
       - echo Installing ...
-#      - npm install -g aws-cli
+      - pip install --upgrade awscli
 #     - npm install express
   pre_build:
     commands:
