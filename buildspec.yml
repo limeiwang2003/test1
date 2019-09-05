@@ -5,11 +5,11 @@ phases:
         nodejs: 10  
     commands:
       - echo Installing ...
-      - npm install -g awscli
+#      - npm install -g awscli
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
-      - npm install
+#      - npm install
   build:
     commands:
       - echo Build started on `date`
