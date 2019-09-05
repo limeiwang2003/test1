@@ -16,3 +16,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+artifacts:
+  files:
+    - '**/*'
+  name: myname-$(date +%Y-%m-%d) 
