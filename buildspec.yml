@@ -5,18 +5,19 @@ phases:
         nodejs: 10  
     commands:
       - echo Installing ...
-      - pip install --upgrade awscli
-#     - npm install express
   pre_build:
     commands:
-      - echo Installing source NPM dependencies...
+      - echo Installing pre_build ...
+#      - yarn install --frozen-lockfile
   build:
     commands:
       - echo Build started on `date`
+#      - yarn run build
   post_build:
     commands:
       - echo Build completed on `date`
+#      - yarn run test
 artifacts:
   files:
     - '**/*'
-  name: myname-$(date +%Y-%m-%d) 
+  base-directory: dist
