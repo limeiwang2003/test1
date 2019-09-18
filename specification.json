@@ -1,0 +1,11 @@
+{
+	"ImageId": “stagingAPI_DB_Spot”,
+	"InstanceType": "t2.micro",
+	"Placement": {
+		"AvailabilityZone": "ap-southeast-2"
+	},
+	"IamInstanceProfile": {
+      "Arn": "arn:aws:iam:::instance-profile/my-iam-role"
+	},
+	userdata: "install.sh"
+}
