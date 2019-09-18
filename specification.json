@@ -1,5 +1,5 @@
 {
-	"ImageId": “stagingAPI_DB_Spot”,
+	"ImageId": "stagingAPI_DB_Spot",
 	"InstanceType": "t2.micro",
 	"Placement": {
 		"AvailabilityZone": "ap-southeast-2"
