@@ -7,5 +7,5 @@
 	"IamInstanceProfile": {
       "Arn": "arn:aws:iam:::instance-profile/my-iam-role"
 	},
-	userdata: "install.sh"
+	"userdata": "install.sh"
 }
